@@ -261,16 +261,17 @@ h1, h2, h3, h4, h5, h6 {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 28px;
 }
 
 .nav-links a {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   color: rgba(255,255,255,0.75);
   transition: color 0.3s;
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-links a::after {
@@ -299,17 +300,19 @@ h1, h2, h3, h4, h5, h6 {
 .header-cta {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
+  flex-shrink: 0;
 }
 
 .header-phone {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--white);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
 }
 
 .header-phone svg {
@@ -1507,6 +1510,13 @@ h1, h2, h3, h4, h5, h6 {
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */
+@media (max-width: 1200px) {
+  .nav-links { gap: 20px; }
+  .nav-links a { font-size: 0.78rem; }
+  .header-phone { display: none; }
+  .header-cta .btn { padding: 9px 18px; font-size: 0.75rem; }
+}
+
 @media (max-width: 1024px) {
   .practice-cards {
     grid-template-columns: 1fr;
