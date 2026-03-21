@@ -255,6 +255,22 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity 0.3s;
 }
 
+.header-logo .logo-white {
+  display: block;
+}
+
+.header-logo .logo-dark {
+  display: none;
+}
+
+.header.scrolled .header-logo .logo-white {
+  display: none;
+}
+
+.header.scrolled .header-logo .logo-dark {
+  display: block;
+}
+
 .header-logo:hover img {
   opacity: 0.85;
 }
