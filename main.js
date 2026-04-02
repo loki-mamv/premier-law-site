@@ -99,6 +99,12 @@
   var formSuccess = document.getElementById('formSuccess');
 
   if (contactForm) {
+    // Show success message if redirected back after FormSubmit
+    if (window.location.search.includes('submitted=true') && formSuccess) {
+      contactForm.style.display = 'none';
+      formSuccess.style.display = 'block';
+    }
+
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
       var isValid = true;
@@ -124,9 +130,9 @@
         isValid = false;
       }
 
-      if (isValid && formSuccess) {
-        contactForm.style.display = 'none';
-        formSuccess.style.display = 'block';
+      if (isValid) {
+        contactForm.submit();
+        return;
       } else {
         var firstError = contactForm.querySelector('.has-error input, .has-error textarea');
         if (firstError) firstError.focus();
