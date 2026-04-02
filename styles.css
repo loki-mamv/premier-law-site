@@ -1516,12 +1516,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-disclaimer {
-  font-size: 0.75rem;
-  color: rgba(139, 148, 158, 0.6);
-  max-width: 600px;
-  line-height: 1.6;
+  font-size: 0.72rem;
+  color: rgba(139, 148, 158, 0.55);
+  max-width: 680px;
+  line-height: 1.65;
   text-align: center;
-  margin: 24px auto 0;
+  margin: 28px auto 0;
+  border-top: 1px solid rgba(139, 148, 158, 0.15);
+  padding-top: 20px;
+}
+.footer-disclaimer p {
+  margin: 0 0 8px;
+}
+.footer-disclaimer p:last-child {
+  margin-bottom: 0;
+}
+.footer-disclaimer-title {
+  font-weight: 600;
+  color: rgba(139, 148, 158, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.68rem;
+  margin-bottom: 10px !important;
 }
 
 /* ============================================
