@@ -760,6 +760,23 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.about-grid.about-grid--solo {
+  grid-template-columns: 1fr;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-grid.about-grid--solo .section-label::before {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-grid.about-grid--solo .about-cta,
+.about-grid.about-grid--solo .about-stats {
+  justify-content: center;
+}
+
 .about-image-wrapper {
   position: relative;
 }
