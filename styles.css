@@ -1618,6 +1618,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: clamp(1.8rem, 6.5vw, 2.8rem);
   }
 
+  .scroll-indicator {
+    display: none;
+  }
+
   .trust-bar-inner {
     gap: 24px;
   }
