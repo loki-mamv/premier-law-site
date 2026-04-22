@@ -179,8 +179,9 @@
               <div class="error-msg">Please enter your name.</div>
             </div>
             <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+              <label for="phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+              <div class="error-msg">Please enter your phone number.</div>
             </div>
           </div>
 
@@ -191,20 +192,29 @@
           </div>
 
           <div class="form-group">
-            <label for="practice-area">Practice Area</label>
-            <select id="practice-area" name="practice-area">
+            <label for="practice-area">Practice Area *</label>
+            <select id="practice-area" name="practice-area" required>
               <option value="" disabled selected>Select a practice area</option>
               <option value="telecom">Telecommunications</option>
               <option value="real-estate">Real Estate</option>
               <option value="estate-planning">Estate Planning</option>
               <option value="other">Other</option>
             </select>
+            <div class="error-msg">Please select a practice area.</div>
           </div>
 
           <div class="form-group">
             <label for="message">Message *</label>
             <textarea id="message" name="message" placeholder="Tell us about your legal matter..." required></textarea>
             <div class="error-msg">Please enter a message.</div>
+          </div>
+
+          <div class="form-group form-consent">
+            <label class="consent-label">
+              <input type="checkbox" id="disclaimer" name="disclaimer" value="yes" required>
+              <span>I have read the <a href="legal-disclaimer.html" target="_blank" rel="noopener">legal disclaimer</a>. *</span>
+            </label>
+            <div class="error-msg">Please confirm that you have read the legal disclaimer.</div>
           </div>
 
           <div class="form-submit">
@@ -314,7 +324,7 @@
           </svg>
         </div>
         <h3>Initial Contact</h3>
-        <p>After you submit your inquiry, our team will respond within one business day to schedule your consultation.</p>
+        <p>Our team will review your inquiry to determine whether we can assist. If so, we will reach out to schedule a consultation.</p>
       </div>
 
       <div class="practice-card reveal reveal-delay-1">
@@ -326,8 +336,8 @@
             <path d="M22 30h12M22 36h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
           </svg>
         </div>
-        <h3>Paid Consultation</h3>
-        <p>Initial consultations are paid and available by appointment. Our team will discuss your matter, outline potential approaches, and answer your questions.</p>
+        <h3>Initial Consultation</h3>
+        <p>By appointment only. May require payment. Our team will discuss your matter, outline potential approaches, and answer your questions.</p>
       </div>
 
       <div class="practice-card reveal reveal-delay-2">
