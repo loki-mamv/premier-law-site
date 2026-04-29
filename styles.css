@@ -586,40 +586,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-/* Scroll indicator */
-.scroll-indicator {
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  opacity: 0;
-  animation: fadeUp 0.8s 1.3s var(--transition-smooth) forwards;
-}
-
-.scroll-indicator span {
-  font-size: 0.65rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
-.scroll-line {
-  width: 1px;
-  height: 40px;
-  background: linear-gradient(to bottom, var(--crimson), transparent);
-  animation: scrollPulse 2s ease-in-out infinite;
-}
-
-@keyframes scrollPulse {
-  0%, 100% { opacity: 1; transform: scaleY(1); }
-  50% { opacity: 0.4; transform: scaleY(0.6); }
-}
-
 /* ============================================
    PRACTICE AREAS OVERVIEW
    ============================================ */
@@ -1670,10 +1636,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero-heading {
     font-size: clamp(1.8rem, 6.5vw, 2.8rem);
-  }
-
-  .scroll-indicator {
-    display: none;
   }
 
   .trust-bar-inner {
