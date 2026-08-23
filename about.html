@@ -2,13 +2,14 @@
 <html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>About Premier Law | Derek A. Carrillo, Tampa Attorney</title>
-<meta name="description" content="Learn about Premier Law and founder Derek A. Carrillo. Founded in 2015, the boutique Tampa law firm has guided $1B+ in closed transactions in real estate, telecom, and estate planning.">
+<meta name="description" content="Learn about Premier Law and founder Derek A. Carrillo. Founded in 2015, the boutique Tampa law firm has guided $1B+ in closed transactions in real estate and telecom.">
 <meta name="keywords" content="Derek Carrillo attorney, Premier Law, Tampa law firm, about Premier Law, telecom attorney Florida, real estate lawyer Tampa">
 <meta name="author" content="Premier Law">
 <meta property="og:title" content="About Premier Law | Derek A. Carrillo">
@@ -24,12 +25,12 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Derek A. Carrillo",
-  "jobTitle": "CEO & Principal Attorney",
+  "jobTitle": "Founder & Principal Attorney",
   "worksFor": {
     "@type": "LegalService",
     "name": "Premier Law"
   },
-  "knowsAbout": ["Real Estate Law", "Telecommunications Law", "Estate Planning"],
+  "knowsAbout": ["Real Estate Law", "Telecommunications Law"],
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Tampa",
@@ -46,7 +47,7 @@
   "founder": {
     "@type": "Person",
     "name": "Derek A. Carrillo",
-    "jobTitle": "CEO & Principal Attorney"
+    "jobTitle": "Founder & Principal Attorney"
   },
   "foundingDate": "2015",
   "url": "https://premier.law",
@@ -59,8 +60,8 @@
     "postalCode": "33602",
     "addressCountry": "US"
   },
-  "description": "Boutique Tampa law firm specializing in real estate, telecommunications, and estate planning with $1B+ in closed transactions.",
-  "knowsAbout": ["Real Estate Law", "Telecommunications Law", "Estate Planning"],
+  "description": "Boutique Tampa law firm specializing in real estate and telecommunications with $1B+ in closed transactions.",
+  "knowsAbout": ["Real Estate Law", "Telecommunications Law"],
   "image": "assets/premier-law-lockup-white.png"
 }
 </script>
@@ -90,7 +91,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css?v=20260517">
+<link rel="stylesheet" href="styles.css?v=20260823">
 
 <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
@@ -108,9 +109,24 @@
     </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="telecommunications.html">Telecommunications</a>
-      <a href="real-estate.html">Real Estate</a>
-      <a href="estate-planning.html">Estate Planning</a>
+      <div class="nav-item">
+        <a href="telecommunications.html">Telecommunications<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="nav-dropdown">
+          <a href="mdu-broadband.html">MDU &amp; Broadband Transactions</a>
+          <a href="wireless-infrastructure.html">Wireless Infrastructure Transactions</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="real-estate.html">Real Estate<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
+        <div class="nav-dropdown">
+          <a href="purchase-sale.html">Purchase &amp; Sale Transactions</a>
+          <a href="leases.html">Commercial &amp; Residential Leases</a>
+          <a href="landlord-evictions.html">Landlord Representation &amp; Evictions</a>
+          <a href="land-trusts.html">Land Trusts</a>
+          <a href="surplus-funds.html">Surplus Funds Recovery</a>
+        </div>
+      </div>
+      <a href="resources.html">Resources</a>
       <a href="about.html" class="active">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -133,8 +149,15 @@
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <a href="index.html">Home</a>
   <a href="telecommunications.html">Telecommunications</a>
+  <a href="mdu-broadband.html" class="mobile-sub">MDU &amp; Broadband Transactions</a>
+  <a href="wireless-infrastructure.html" class="mobile-sub">Wireless Infrastructure Transactions</a>
   <a href="real-estate.html">Real Estate</a>
-  <a href="estate-planning.html">Estate Planning</a>
+  <a href="purchase-sale.html" class="mobile-sub">Purchase &amp; Sale Transactions</a>
+  <a href="leases.html" class="mobile-sub">Commercial &amp; Residential Leases</a>
+  <a href="landlord-evictions.html" class="mobile-sub">Landlord Representation &amp; Evictions</a>
+  <a href="land-trusts.html" class="mobile-sub">Land Trusts</a>
+  <a href="surplus-funds.html" class="mobile-sub">Surplus Funds Recovery</a>
+  <a href="resources.html">Resources</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
   <a href="tel:8133300697" class="mobile-phone">813.330.0697</a>
@@ -165,7 +188,7 @@
       <p class="section-label">Our History</p>
       <h2>Our Story</h2>
       <p>Founded in 2015, Premier Law has spent the last decade helping clients across Florida navigate complex legal and transactional matters with clarity and confidence.</p>
-      <p>The firm was built on a simple principle: every client deserves direct access to experienced legal counsel. At Premier Law, you work directly with Derek &mdash; not a junior associate, not a call center. You get senior-level attention, responsive communication, and a lawyer who is personally invested in your outcome from the first conversation to the final closing.</p>
+      <p>The firm was built on a simple principle: every client deserves direct access to experienced legal counsel. At Premier Law, clients receive senior-level attention and clear communication. Our legal assistant is your primary point of contact, ensuring nothing falls through the cracks.</p>
       <p>Over ten years, this approach has earned the firm a reputation for being practical, strategic, and deal-focused. With more than $1 billion in closed transactions, Premier Law has become a trusted partner for property owners, developers, telecom companies, and families throughout Florida and across the country.</p>
     </div>
   </div>
@@ -179,7 +202,7 @@
     <div class="about-grid">
       <div class="about-image-wrapper reveal">
         <div class="about-image">
-          <img src="assets/Derek-Carrillo.jpg" alt="Derek A. Carrillo, CEO and Principal Attorney of Premier Law" width="500" height="600" loading="lazy">
+          <img src="assets/Derek-Carrillo.jpg" alt="Derek A. Carrillo, Principal Attorney of Premier Law" width="500" height="600" loading="lazy">
           <div class="about-image-badge">
             <div class="badge-value">$1B+</div>
             <div class="badge-label">Closed Transactions</div>
@@ -188,22 +211,30 @@
       </div>
 
       <div class="about-content reveal reveal-delay-1">
-        <p class="section-label">CEO &amp; Principal Attorney</p>
+        <p class="section-label">Principal Attorney</p>
         <h2 class="section-heading">Derek A. Carrillo</h2>
-        <p class="about-text">As the founder of Premier Law, a boutique firm focused on real estate and telecommunications, Derek is a respected advisor to developers, community associations, and property owners, having negotiated and closed over $1 billion in real estate and telecommunications transactions. He specializes in bulk and retail service contracts, access and marketing agreements, site leases, and wireless infrastructure contracts, helping clients transform legal challenges into long-term strategic value.</p>
-        <p class="about-text">Derek started Premier Law in 2015 and later transitioned to in-house roles, gaining invaluable industry perspective that now informs his practice. His experience includes serving in former in-house roles with a major telecommunications tower company and a national multifamily developer, bringing a unique combination of private practice precision and corporate legal strategy to every engagement.</p>
+        <p class="about-text">Derek A. Carrillo founded Premier Law in 2015 after working as a telecommunications industry attorney, where he gained firsthand experience negotiating broadband, wireless, and infrastructure deals. That real-world industry knowledge sets him apart from general-practice attorneys.</p>
+        <p class="about-text">Today, Derek represents clients in two focused practice areas, telecommunications and real estate, bringing the same deal-focused precision to every engagement. His 11+ years of combined legal and business experience translate to practical advice, efficient transactions, and outcomes that protect client interests.</p>
+        <p class="about-text">Derek founded Premier Law to deliver the senior-level attention of a large firm with the accessibility of a boutique practice. Clients benefit from direct access to experienced counsel, with our legal assistant serving as the primary point of contact to ensure responsive communication and seamless handling of every matter.</p>
 
         <div class="credentials-grid">
           <div class="credential-item">
             <h4>Education</h4>
-            <p>J.D., Barry University &mdash; Dwayne O. Andreas School of Law (2014)</p>
+            <p>J.D., Barry University, Dwayne O. Andreas School of Law (2014)</p>
             <p>B.A., Bethany College (2010)</p>
           </div>
           <div class="credential-item">
             <h4>Bar Admissions</h4>
-            <p>District of Columbia &bull; Florida &bull; New Mexico &bull; New York</p>
+            <p>Florida<br>New York<br>New Mexico<br>District of Columbia</p>
           </div>
-
+          <div class="credential-item">
+            <h4>Focus Areas</h4>
+            <p>Telecommunications, Real Estate</p>
+          </div>
+          <div class="credential-item">
+            <h4>Experience</h4>
+            <p>11+ Years Legal &amp; Business Experience</p>
+          </div>
         </div>
       </div>
     </div>
@@ -218,7 +249,7 @@
     <div class="why-header">
       <p class="section-label reveal">What Sets Us Apart</p>
       <h2 class="section-heading reveal reveal-delay-1">The Premier Difference</h2>
-      <p class="section-subtext reveal reveal-delay-2">More than a law firm &mdash; a strategic partner invested in your success.</p>
+      <p class="section-subtext reveal reveal-delay-2">More than a law firm: a strategic partner invested in your success.</p>
     </div>
 
     <div class="why-grid">
@@ -261,21 +292,6 @@
           <p>$1B+ in closed transactions across the country. A decade of results that speak for themselves and a reputation built on getting deals done.</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================
-     ATTORNEYS KEY TITLE
-     ============================================ -->
-<section class="content-section content-section--light">
-  <div class="container">
-    <div class="content-text content-text--light reveal">
-      <p class="section-label">Affiliated Title Partner</p>
-      <h2>Attorneys Key Title</h2>
-      <p>For clients with real estate transaction needs, Premier Law works alongside Attorneys Key Title &mdash; a trusted Florida title provider with experience in both residential and commercial closings.</p>
-      <p>Attorneys Key Title provides title searches, title insurance, escrow services, and full closing coordination. This relationship gives Premier Law clients the option of a seamless, end-to-end experience from contract negotiation through final recording.</p>
-      <p><a href="real-estate.html" class="btn btn-crimson">Learn More About Our Real Estate Services</a></p>
     </div>
   </div>
 </section>
@@ -327,17 +343,17 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/premier-law-lockup-white.png" alt="Premier Law" width="130" height="44" loading="lazy">
-        <p>A boutique Tampa law firm delivering strategic legal counsel in real estate, telecommunications, and estate planning. More than $1 billion in closed transactions.</p>
+        <p>A boutique Tampa law firm delivering strategic legal counsel in real estate and telecommunications. More than $1 billion in closed transactions.</p>
       </div>
       <div class="footer-col">
         <h4>Practice Areas</h4>
         <a href="telecommunications.html">Telecommunications</a>
         <a href="real-estate.html">Real Estate</a>
-        <a href="estate-planning.html">Estate Planning</a>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
@@ -352,7 +368,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 Premier Law. All rights reserved.</p>
+      <p>&copy; 2026 Premier Law. All rights reserved.</p>
       <p>Tampa, Florida</p>
     </div>
 
